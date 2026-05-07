@@ -68,9 +68,16 @@ function initDynamicCarousel() {
   const dotsContainer = document.querySelector('.carousel-dots');
   if (!track || !dotsContainer) return;
 
-  track.innerHTML = carInventory.map(car => `
+  track.innerHTML = carInventory.map((car, index) => `
     <div class="carousel-slide">
-      <div class="slide-bg" style="background-image:url('assets/images/cars/${car.file}');"></div>
+      <picture>
+        <source srcset="assets/images/cars/${car.file}" type="image/webp">
+        <img src="assets/images/cars/${car.file.replace('.webp', '.jpg')}" 
+             alt="${car.name} - AutoVibe Motors" 
+             class="slide-bg" 
+             width="800" height="450" 
+             loading="${index === 0 ? 'eager' : 'lazy'}">
+      </picture>
       <div class="slide-overlay"></div>
       <div class="slide-info">
         <h3>${car.name}</h3>

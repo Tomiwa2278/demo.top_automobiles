@@ -28,7 +28,15 @@
     </div>
   </div></nav>
 
-  <section class="page-hero" style="background-image:url('assets/images/hero/hero-about.webp');">
+  <section class="page-hero">
+    <picture>
+      <source srcset="assets/images/hero/hero-about.webp" type="image/webp">
+      <img src="assets/images/hero/hero-about.jpg" 
+           alt="About AutoVibe" 
+           class="page-hero-bg" 
+           width="1920" height="1080" 
+           loading="eager">
+    </picture>
     <div style="position:absolute;inset:0;background:var(--overlay);z-index:0;"></div>
     <div class="container" style="position:relative;z-index:1;">
       <h1>Our <span class="gold">Story</span></h1>
@@ -49,7 +57,16 @@
 
   <section class="section" style="background:var(--bg-secondary);">
     <div class="container mission-grid">
-      <div class="reveal"><img loading="lazy" src="assets/images/services/mission.webp" alt="AutoVibe Luxury Showroom" width="1280" height="720" style="width:100%;height:350px;object-fit:cover;border-radius:var(--radius); border:1px solid var(--border);"></div>
+      <div class="reveal">
+        <picture>
+          <source srcset="assets/images/services/mission.webp" type="image/webp">
+          <img src="assets/images/services/mission.jpg" 
+               alt="AutoVibe Luxury Showroom" 
+               width="1280" height="720" 
+               loading="lazy"
+               style="width:100%;height:350px;object-fit:cover;border-radius:var(--radius); border:1px solid var(--border);">
+        </picture>
+      </div>
       <div class="reveal">
         <h2 style="font-family:var(--font-heading);font-size:2rem;margin-bottom:24px;">Our <span class="gold">Mission</span></h2>
         <p style="color:var(--text-secondary);line-height:1.8;"><i class="fas fa-bullseye" style="color:var(--gold);margin-right:10px;"></i>To provide every Nigerian with access to quality vehicles through transparent pricing and a world-class customer experience.</p>

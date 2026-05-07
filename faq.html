@@ -25,7 +25,15 @@
     </div>
   </div></nav>
 
-  <section class="page-hero" style="background-image:url('assets/images/hero/hero-faq.webp');">
+  <section class="page-hero">
+    <picture>
+      <source srcset="assets/images/hero/hero-faq.webp" type="image/webp">
+      <img src="assets/images/hero/hero-faq.jpg" 
+           alt="Frequently Asked Questions" 
+           class="page-hero-bg" 
+           width="1920" height="1080" 
+           loading="eager">
+    </picture>
     <div style="position:absolute;inset:0;background:var(--overlay);z-index:0;"></div>
     <div class="container" style="position:relative;z-index:1;"><h1>Frequently Asked <span class="gold">Questions</span></h1><p>Everything you need to know about AutoVibe Motors.</p></div>
   </section>
@@ -39,7 +47,14 @@
       </div>
 
       <div class="cta-banner reveal" style="border-radius:var(--radius);margin-top:40px;">
-        <div class="cta-banner-bg" style="background-image:url('assets/images/hero/hero-contact.webp');"></div>
+        <picture>
+          <source srcset="assets/images/hero/hero-contact.webp" type="image/webp">
+          <img src="assets/images/hero/hero-contact.jpg" 
+               alt="Contact AutoVibe" 
+               class="cta-banner-bg" 
+               width="1920" height="1080" 
+               loading="lazy">
+        </picture>
         <div class="container" style="position:relative;z-index:1;">
           <h2 style="font-size:2rem;">Still have <span class="gold">questions?</span></h2>
           <div class="hero-buttons" style="opacity:1;">

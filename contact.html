@@ -26,7 +26,15 @@
     </div>
   </div></nav>
 
-  <section class="page-hero" style="background-image:url('assets/images/hero/hero-contact.webp');">
+  <section class="page-hero">
+    <picture>
+      <source srcset="assets/images/hero/hero-contact.webp" type="image/webp">
+      <img src="assets/images/hero/hero-contact.jpg" 
+           alt="Contact AutoVibe" 
+           class="page-hero-bg" 
+           width="1920" height="1080" 
+           loading="eager">
+    </picture>
     <div style="position:absolute;inset:0;background:var(--overlay);z-index:0;"></div>
     <div class="container" style="position:relative;z-index:1;"><h1>Get in <span class="gold">Touch</span></h1><p>We'd love to hear from you. Reach out anytime.</p></div>
   </section>

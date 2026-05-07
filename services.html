@@ -28,7 +28,15 @@
     </div>
   </div></nav>
 
-  <section class="page-hero" style="background-image:url('assets/images/hero/hero-services.webp');">
+  <section class="page-hero">
+    <picture>
+      <source srcset="assets/images/hero/hero-services.webp" type="image/webp">
+      <img src="assets/images/hero/hero-services.jpg" 
+           alt="Our Services" 
+           class="page-hero-bg" 
+           width="1920" height="1080" 
+           loading="eager">
+    </picture>
     <div style="position:absolute;inset:0;background:var(--overlay);z-index:0;"></div>
     <div class="container" style="position:relative;z-index:1;">
       <h1>Our <span class="gold">Services</span></h1>

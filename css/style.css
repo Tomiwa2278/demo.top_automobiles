@@ -374,8 +374,9 @@ select {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
 }
 
@@ -445,6 +446,16 @@ select {
   right: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  z-index: 1;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .page-hero h1 {
@@ -492,8 +503,9 @@ select {
 .carousel-slide .slide-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 1s ease;
 }
 
@@ -760,8 +772,9 @@ select {
 .cta-banner-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 0.15;
   z-index: 0;
 }
